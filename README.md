@@ -1,36 +1,71 @@
-# 🚦 Radar Eletrônico – Aula de Condicionais
+# 🚦📊 Projeto: Radar Eletrônico + Classificador de Desempenho
 
-Este projeto é uma aplicação simples em HTML, CSS e JavaScript criada para demonstrar o uso de **estruturas condicionais (if/else)** em JavaScript.
+Este projeto combina **duas aplicações educativas em JavaScript** em uma única página web:
 
-## 📌 Descrição
+1. **Radar Eletrônico** – verificação de velocidade
+2. **Classificador de Desempenho** – análise de notas
 
-A página simula um radar eletrônico de velocidade. O usuário digita uma velocidade em km/h, e o sistema verifica se o valor está dentro do limite permitido (80 km/h).
+O objetivo é praticar **estruturas condicionais (if / else if / else)** e manipulação do DOM.
 
-Dependendo do valor informado, o programa exibe diferentes mensagens:
+---
 
-- ✅ Velocidade permitida → pode passar
-- ❌ Velocidade acima do limite → multa
-- ⚠️ Valor inválido (zero ou negativo)
+## 📌 Funcionalidades
+
+### 🚦 Radar Eletrônico
+
+O usuário informa uma velocidade e o sistema verifica:
+
+* ✅ Até 80 km/h → Permitido
+* ❌ Acima de 80 km/h → Multa
+* ⚠️ Valor inválido → Erro
+
+### 📊 Classificador de Desempenho
+
+O usuário informa uma nota de 0 a 10:
+
+* 🏆 ≥ 9 → Excelente
+* ✅ ≥ 7 → Bom
+* ⚠️ ≥ 5 → Regular
+* ❌ < 5 → Insuficiente
+
+---
 
 ## 🛠️ Tecnologias utilizadas
 
-- HTML5
-- CSS3
-- JavaScript (DOM + condicionais)
+* HTML5
+* CSS3
+* JavaScript (condicionais + DOM)
 
-## ▶️ Como usar
+---
 
-1. Abra o arquivo `.html` em um navegador.
-2. Digite uma velocidade no campo de entrada.
-3. Clique no botão **verificarVelocidade**.
-4. Veja a mensagem exibida na tela.
+## ▶️ Como executar
 
-## 🧠 Conceitos demonstrados
+1. Salve o arquivo como `index.html`
+2. Abra no navegador
+3. Teste os dois painéis digitando valores
 
-- Manipulação do DOM (`getElementById`)
-- Conversão de tipos (`Number()`)
-- Estruturas condicionais (`if/else`)
-- Alteração dinâmica de texto e estilo com JavaScript
+---
+
+## 🧠 Conceitos aprendidos
+
+* Estruturas condicionais
+* Captura de dados de inputs
+* Atualização dinâmica da interface
+* Estilização com CSS
+* Organização de múltiplas funções JS
+
+---
 
 ## 📂 Estrutura do projeto
 
+/radar-classificador
+│── index.html
+│── README.md
+
+---
+
+## 🎯 Objetivo educacional
+
+Projeto ideal para iniciantes em programação web que querem praticar lógica condicional e interação com o usuário.
+
+💡 Exercício recomendado para aulas de introdução ao JavaScript.

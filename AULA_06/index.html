@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Condicionais</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-color: #f0f2df;
+        }
+        .painel{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input{
+            padding: 10px;
+            width: 80px;
+            font-size: 18px;
+        }
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+        <div class="painel">
+            <h2>🚦 Radar Eletrônico</h2>
+            <p>Limite de velocidade: <strong>80km/h</strong></p>
+            <input type="number" id="velocidade" placeholder="km/h">
+            <button onclick="verificarVelocidade()">verificarVelocidade</button>
+            <h3 id="msg"></h3>
+        </div>
+        <script>
+            function verificarVelocidade(){
+                let velTexto = document.getElementById('velocidade').value;
+                let vel = Number(velTexto)
+                let display = document.getElementById('msg')
+
+                if (vel <= 80){
+                    display.innerHTML = "Pode passar.";
+                    display.style.color = "green";
+
+                } else {
+                    display.innerHTML = "MULTADO! Você excedeu o limite.";
+                    display.style.color = "red";
+                }
+                if (vel <= 0){
+                    display.innerHTML = "Valor Invalido"
+                    display.style.color = "pink"
+                }
+
+            }
+        </script>
+</body>
+</html>
